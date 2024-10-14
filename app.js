@@ -7,7 +7,7 @@ let started = false;
 let highScore = 0;
 let h2 = document.querySelector("h2");
 
-// alert("Toggle Fullscreen (Press F11) for better experience.");
+alert("Toggle Fullscreen (Press F11) for better experience.");
 
 function gameFlash(btn) {
   btn.classList.add("gameFlash");
