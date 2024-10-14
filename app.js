@@ -7,7 +7,7 @@ let started = false;
 let highScore = 0;
 let h2 = document.querySelector("h2");
 
-alert("Toggle Fullscreen (Press F11) for better experience.");
+// alert("Toggle Fullscreen (Press F11) for better experience.");
 
 function gameFlash(btn) {
   btn.classList.add("gameFlash");
@@ -44,14 +44,23 @@ function levelUp() {
   }, timeout);
 }
 
-// any key pressed
-document.addEventListener("keypress", function () {
-  if (started == false) {
+// any key pressed or start button
+function startGame() {
+  if (!started) {
     started = true;
     console.log("Game has started!");
     levelUp();
   }
+}
+
+document.addEventListener("keypress", function () {
+  startGame();
 });
+
+document.getElementById("startBtn").addEventListener("click", function () {
+  startGame();
+});
+
 
 function userFlash(btn) {
   btn.classList.add("userFlash");
