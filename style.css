@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    margin: 1em;
+    margin-top: 2em;
+    box-shadow: 6px 6px 4px 5px black;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.blue {
+    background-color: #819ff9;
+}
+
+h1{
+    padding: 20px 80px;
+    text-align: start;
+    text-shadow: 2px 2px 0px #63aac0;
+    letter-spacing: 8px;
+    border-bottom: 4px solid white;
+}
+
+h2{
+    margin: 10px;
+    height: 55px;
+}
+
+.highScore{
+    margin-top: 50px;
+}
+
+.gameFlash {
+    box-shadow: 0 0 0px 10px white;
+}
+
+.userFlash {
+    box-shadow: 0 0 0px 10px lime;
+}
+
+.wrongFlash{
+    color: black;
+    background-color: red;
+}
