@@ -86,9 +86,3 @@ h2{
 .mobile-button:active{
     transform: scale(1);
 }
-
-@media screen and (min-width: 720px) {
-    .mobile-button{
-        display: none;
-    }
-}
